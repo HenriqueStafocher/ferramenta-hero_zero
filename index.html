@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Nabla&family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>Calculadora de Média</h1><h1 class="game">Hero Zero</h1>
+
+        <br><br><br>
+
+        <form>
+            <div class="emote">
+                <p class="paragrafo">&#128170</p>
+                <input type="text" id="for" name="forca" placeholder="Digite aqui sua  FORÇA" class="caixa">
+            </div>
+
+        <br><br>
+
+            <div class="emote">
+                <p class="paragrafo">&#129506</p>
+                <input type="text" id="vig" name="vigor" placeholder="Digite aqui seu  VIGOR" class="caixa">
+            </div>
+
+        <br><br>
+
+            <div class="emote">
+                <p class="paragrafo">&#129504</p>
+                <input type="text" id="cer" name="cerebro" placeholder="Digite aqui sua  INTELIGÊNCIA" class="caixa">
+            </div>
+
+        <br><br>
+
+            <div class="emote">
+                <p class="paragrafo">&#128064</p>
+                <input type="text" id="int" name="intuicao" placeholder="Digite aqui sua  INTUIÇÃO" class="caixa">
+            </div>
+
+            <div class="print-resultado" id="resultado"></div>
+
+            <br><br><br>
+
+            <div class="emote">
+                <p class="paragrafo">⭐</p>
+                <input type="text" id="lvl" name="intuicao" placeholder="Digite aqui seu  NIVEL" class="caixa2">
+            </div>
+        </form>
+        <div class="botoes">
+            <button onclick="calcularMedia()" type="button" class="btn">
+                <strong>CALCULAR</strong>
+                <div id="container-stars">
+                    <div id="stars"></div>
+                </div>
+                <div id="glow">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </button>
+            <button onclick="reiniciar()" type="button" class="btn">
+                <strong>REINICIAR</strong>
+                <div id="container-stars">
+                    <div id="stars"></div>
+                </div>
+                <div id="glow">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </button>
+        </div>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+
+<footer>Desenvolvido por Riquemen</footer>
+</html>

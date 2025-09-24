@@ -1,0 +1,189 @@
+@import url(botao.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.emote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1.2vw;
+}
+
+.paragrafo {
+    margin-right: 1vw;
+    font-size: 2.5vw;
+}
+
+.caixa, .caixa2 {
+    border: 0.35vw solid rgb(16, 255, 255);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 1.5vw;
+    text-align: center;
+    margin: 0;
+    width: 60vw;
+    max-width: 500px;
+    min-width: 250px;
+    font-size: 1.5vw;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.caixa2 {
+    border: 0.35vw solid rgb(255, 16, 16);
+}
+
+.caixa:focus, .caixa2:focus {
+    border-color: rgb(35, 221, 35);
+    outline: none;
+}
+
+.caixa::placeholder, .caixa2::placeholder {
+    font-size: 1.5vw;
+    font-family: "Delius", cursive;
+    color: rgb(50, 50, 50);
+    text-align: center;
+}
+
+.print-resultado {
+    display: none;
+    margin: 2vw auto 0 auto;
+    text-align: center;
+    background: linear-gradient(180deg, #ab03ff, #e6befa);
+    border-radius: 1.5vw;
+    padding: 1vw 2vw;
+    font-size: 1.3vw;
+    box-sizing: border-box;
+    font-family: "Righteous", sans-serif;
+    font-weight: 500;
+    min-width: 150px; /* opcional, só para não ficar muito pequeno */
+    max-width: 90vw;  /* opcional, para não estourar em telas pequenas */
+    word-break: break-word; /* quebra linha se o texto for grande */
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+    gap: 2vw;
+    width: 100%;
+}
+
+h1, .game {
+    display: flex;
+    justify-content: center;
+    font-family: "Righteous", sans-serif;
+    font-size: 3vw;
+}
+
+h1 {
+    color: rgb(255, 62, 62);
+}
+
+.game {
+    font-family: "Nabla", system-ui;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: linear-gradient(170deg, #0033cc, #00eaff);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Delius", cursive;
+    font-weight: 600;
+    font-size: 150%;
+}
+
+/* Responsivo para Desktop (acima de 1024px) */
+@media (min-width: 1025px) {
+    .caixa, .caixa2, .print-resultado {
+        width: 40vw;
+        max-width: 700px;
+        font-size: 1.5vw;
+    }
+    .paragrafo {
+        font-size: 2vw;
+    }
+    h1, .game {
+        font-size: 3vw;
+    }
+}
+
+/* Responsivo para Tablet (entre 600px e 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .caixa, .caixa2, .print-resultado {
+        width: 70vw;
+        max-width: 500px;
+        font-size: 2vw;
+        border: 0.65vw solid rgb(16, 255, 255);
+    }
+    .paragrafo {
+        font-size: 3vw;
+    }
+    h1, .game {
+        font-size: 5vw;
+    }
+    .caixa::placeholder, .caixa2::placeholder {
+        font-size: 2vw;
+        text-align: center;
+    }
+}
+
+/* Responsivo para Celular (até 599px) */
+@media (max-width: 599px) {
+    .caixa, .caixa2, .print-resultado {
+        width: 90vw;
+        max-width: 98vw;
+        min-width: 0;
+        font-size: 4vw;
+    }
+    .paragrafo {
+        font-size: 6vw;
+        margin: 2vw;
+    }
+    h1, .game {
+        font-size: 7vw;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .emote {
+        flex-direction: column;
+        align-items: center;
+    }
+    .caixa::placeholder, .caixa2::placeholder {
+        font-size: 2.5vw;
+        text-align: center;
+    }
+}
