@@ -53,6 +53,7 @@ form {
     width: 60vw;
     max-width: 500px;
     min-width: 250px;
+    font-family: "Delius", cursive;
     font-size: 1.5vw;
     box-sizing: border-box;
     transition: border-color 0.2s;

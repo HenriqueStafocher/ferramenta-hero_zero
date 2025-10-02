@@ -11,3 +11,11 @@ function calcularMedia() {
     document.getElementById('resultado').innerHTML = "Pontuação: " + resultado + "<br>Ideal: +100";
 }
 
+function reiniciar() {
+    document.getElementById('for').value = '';
+    document.getElementById('vig').value = '';
+    document.getElementById('cer').value = ''; 
+    document.getElementById('int').value = '';
+    document.getElementById('lvl').value = '';
+    document.querySelector('.print-resultado').style.display = 'none';
+}
